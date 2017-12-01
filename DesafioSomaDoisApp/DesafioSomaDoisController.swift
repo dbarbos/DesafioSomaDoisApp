@@ -12,9 +12,28 @@ class DesafioSomaDoisController {
     
     func conseguimosAcharONumero(_ valor: Int, somandoDoisNumerosDaLista numbers:[Int]) -> Bool{
         
-        // codigo aqui
+        for num in numbers {
+            var numbersNew = numbers
+            numbersNew.remove(at: findIndexOfNumberInArray(numbers: numbers, number: num))
+            for num2 in numbersNew {
+                if num2 + num == valor {
+                    return true
+                }
+            }
+        }
         
         return false
+    }
+    
+    func findIndexOfNumberInArray(numbers:[Int], number:Int) -> Int {
+        var index = 0
+        for num in numbers {
+            if num == number {
+                return index
+            }
+            index = index + 1
+        }
+        return -1
     }
     
 }
