@@ -19,14 +19,26 @@ class DesafioSomaDoisAppTests: XCTestCase {
         }
     }
     
+    var passed:Bool = false
     func testPerformance() {
+
+        let expectation2 = expectation(description: "Sun of elemtns succeed")
+        let startTime = CFAbsoluteTimeGetCurrent()
         var numeros: [Int] = []
-        self.measure {
-            for i in 0..<5000 {
-                numeros.append(i*3)
-            }
-            XCTAssertTrue(DesafioSomaDoisController().conseguimosAcharONumero(12, somandoDoisNumerosDaLista: numeros))
+        for i in 0..<5000 {
+            numeros.append(i*3)
         }
+        let sum = SumObject()
+        let numberDispatchs = 3
+        sum.findSumInicial(numberOfDispatchs:numberDispatchs,numbers: numeros, value: 29991) { (string) in
+            if !self.passed {
+                self.passed = true
+                let timeElapsed = CFAbsoluteTimeGetCurrent() - startTime
+                print("TEMPOO:\(timeElapsed)")
+                expectation2.fulfill()
+            }
+        }
+        waitForExpectations(timeout: 10000, handler: nil)
     }
     
 }

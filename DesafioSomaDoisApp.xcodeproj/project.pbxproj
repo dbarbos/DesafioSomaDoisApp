@@ -14,6 +14,7 @@
 		3F100F521FD1B98800CA2B8F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F100F501FD1B98800CA2B8F /* LaunchScreen.storyboard */; };
 		3F100F5D1FD1B98800CA2B8F /* DesafioSomaDoisAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F100F5C1FD1B98800CA2B8F /* DesafioSomaDoisAppTests.swift */; };
 		3F100F681FD1B9D900CA2B8F /* DesafioSomaDoisController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F100F671FD1B9D900CA2B8F /* DesafioSomaDoisController.swift */; };
+		CD5713FC1FD72623000E4CD2 /* SumDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5713FB1FD72623000E4CD2 /* SumDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		3F100F5C1FD1B98800CA2B8F /* DesafioSomaDoisAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesafioSomaDoisAppTests.swift; sourceTree = "<group>"; };
 		3F100F5E1FD1B98800CA2B8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F100F671FD1B9D900CA2B8F /* DesafioSomaDoisController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesafioSomaDoisController.swift; sourceTree = "<group>"; };
+		CD5713FB1FD72623000E4CD2 /* SumDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SumDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				3F100F501FD1B98800CA2B8F /* LaunchScreen.storyboard */,
 				3F100F531FD1B98800CA2B8F /* Info.plist */,
 				3F100F671FD1B9D900CA2B8F /* DesafioSomaDoisController.swift */,
+				CD5713FB1FD72623000E4CD2 /* SumDelegate.swift */,
 			);
 			path = DesafioSomaDoisApp;
 			sourceTree = "<group>";
@@ -202,6 +205,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD5713FC1FD72623000E4CD2 /* SumDelegate.swift in Sources */,
 				3F100F4A1FD1B98800CA2B8F /* ViewController.swift in Sources */,
 				3F100F481FD1B98800CA2B8F /* AppDelegate.swift in Sources */,
 				3F100F681FD1B9D900CA2B8F /* DesafioSomaDoisController.swift in Sources */,
